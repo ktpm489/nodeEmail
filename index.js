@@ -15,8 +15,8 @@ var port = process.env.PORT || 8080;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-console.log(process.env.user, process.env.clientId, process.env.clientSecret,
-    process.env.refreshToken);
+// console.log(process.env.user, process.env.clientId, process.env.clientSecret,
+//     process.env.refreshToken);
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
